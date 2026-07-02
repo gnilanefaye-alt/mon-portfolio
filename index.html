@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Mame Gnilane FAYE, développeur web full-stack. Découvrez mes projets, compétences et contactez-moi." />
+  <meta name="author" content="Alexandre Martin" />
+  <meta name="keywords" content="portfolio, développeur web, full-stack, HTML, CSS, JavaScript, Paris" />
+  <meta property="og:title" content="Alexandre Martin — Développeur Web Full-Stack" />
+  <meta property="og:description" content="Portfolio de Mame Gnilane FAYE, développeur web full-stack basé à Paris." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <title>Mame Gnilane FAYE — Développeur Web Full-Stack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Fira+Code:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+  <!-- ═══════════════ HEADER / NAV ═══════════════ -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" aria-label="Retour en haut de page">&lt;gnilane.dev /&gt;</a>
+
+      <nav aria-label="Navigation principale">
+        <ul class="nav-list" id="nav-list" role="list">
+          <li><a href="#hero" class="nav-link" data-section="hero">Accueil</a></li>
+          <li><a href="#apropos" class="nav-link" data-section="apropos">À propos</a></li>
+          <li><a href="#competences" class="nav-link" data-section="competences">Compétences</a></li>
+          <li><a href="#projets" class="nav-link" data-section="projets">Projets</a></li>
+          <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-list">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-blob hero-blob--1"></div>
+        <div class="hero-blob hero-blob--2"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="hero-eyebrow">Bonjour, je suis</span>
+          <h1 id="hero-title" class="hero-title">
+            Mame Gnilane FAYE <span class="hero-accent">Martin</span>
+          </h1>
+          <p class="hero-subtitle">
+            Développeur Web Full-Stack passionné par le design, les interfaces intuitives et les technologies modernes.
+          </p>
+          <div class="hero-actions">
+            <a href="#projets" class="btn btn--primary">Voir mes projets <span aria-hidden="true">→</span></a>
+            <a href="#contact" class="btn btn--outline">Me contacter</a>
+          </div>
+          <div class="hero-social" aria-label="Réseaux sociaux">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub de Mame Gnilane FAYE">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.21 3.44 9.63 8.21 11.2.6.11.82-.25.82-.56 0-.28-.01-1.02-.02-2-3.34.71-4.04-1.59-4.04-1.59-.55-1.37-1.34-1.74-1.34-1.74-1.09-.73.08-.72.08-.72 1.21.08 1.84 1.22 1.84 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.58-2.67-.3-5.47-1.3-5.47-5.78 0-1.28.47-2.32 1.24-3.14-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.2a11.6 11.6 0 0 1 6 0c2.29-1.52 3.3-1.2 3.3-1.2.66 1.66.24 2.88.12 3.18.77.82 1.24 1.86 1.24 3.14 0 4.49-2.81 5.48-5.49 5.77.43.36.81 1.08.81 2.18 0 1.58-.01 2.85-.01 3.24 0 .31.21.68.83.56A12.01 12.01 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Profil LinkedIn de Mame Gnilane FAYE">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+            </a>
+            <a href="mailto:gnisfaye@gmail.com" aria-label="Envoyer un e-mail à Mame Gnilane FAYE">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-avatar-wrap">
+            <img src=""
+                 alt="Portrait de Mame Gnilane FAYE,développeur web"
+                 class="hero-avatar" width="400" height="400" />
+            <div class="hero-badge hero-badge--tl">&lt;/&gt; React</div>
+            <div class="hero-badge hero-badge--br">🌐 Full-Stack</div>
+          </div>
+        </div>
+      </div>
+      <a href="#apropos" class="scroll-indicator" aria-label="Défiler vers À propos">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+      </a>
+    </section>
+
+    <!-- ═══════════════ À PROPOS ═══════════════ -->
+    <section id="apropos" class="section section--light" aria-labelledby="apropos-title">
+      <div class="container apropos-grid">
+        <div class="apropos-img-wrap">
+          <img src=""
+               alt="Gnilane travaillant sur son ordinateur portable"
+               loading="lazy" class="apropos-img" width="500" height="500" />
+          <div class="apropos-exp-badge" aria-label="3 ans d'expérience">
+            <strong>3+</strong>
+            <span>ans d'expérience</span>
+          </div>
+        </div>
+        <div class="apropos-text">
+          <span class="section-eyebrow">Qui suis-je ?</span>
+          <h2 id="apropos-title" class="section-title">À propos de moi</h2>
+          <p>
+            Je m'appelle <strong>Mame Gnilane FAYE</strong>, développeur web. Passionné par la création d'expériences numériques élégantes et performantes, je combine expertise technique et sensibilité au design pour livrer des produits de qualité.
+          </p>
+          <p>
+            Diplômé d'un Bachelor en Informatique, j'ai travaillé sur des projets variés — des sites vitrines aux applications web complexes. J'attache une grande importance à l'accessibilité, aux performances et à l'écoconception.
+          </p>
+          <ul class="apropos-facts" aria-label="Informations clés">
+            <li><span class="fact-key">Localisation</span><span class="fact-val">Thiés, Sénégal</span></li>
+            <li><span class="fact-key">Disponibilité</span><span class="fact-val">Freelance </span></li>
+            <li><span class="fact-key">Langues</span><span class="fact-val">Français, Anglais</span></li>
+            <li><span class="fact-key">Formation</span><span class="fact-val">Bachelor Informatique</span></li>
+          </ul>
+          <a href="#contact" class="btn btn--primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Télécharger mon CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ COMPÉTENCES ═══════════════ -->
+    <section id="competences" class="section" aria-labelledby="competences-title">
+      <div class="container">
+        <span class="section-eyebrow section-eyebrow--center">Ce que je maîtrise</span>
+        <h2 id="competences-title" class="section-title section-title--center">Mes Compétences</h2>
+        <p class="section-intro">
+          Un ensemble de technologies frontend et backend que j'utilise pour construire des applications modernes, accessibles et performantes.
+        </p>
+        <div class="skills-grid" id="skills-grid">
+          <!-- Skills injected by JS -->
+        </div>
+        <div class="tech-pills" aria-label="Autres technologies">
+          <span class="tech-pill">TypeScript</span>
+          <span class="tech-pill">Node.js</span>
+          <span class="tech-pill">PostgreSQL</span>
+          <span class="tech-pill">Figma</span>
+          <span class="tech-pill">Vite</span>
+          <span class="tech-pill">REST API</span>
+          <span class="tech-pill">Responsive Design</span>
+          <span class="tech-pill">Git</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ PROJETS ═══════════════ -->
+    <section id="projets" class="section section--light" aria-labelledby="projets-title">
+      <div class="container">
+        <span class="section-eyebrow section-eyebrow--center">Ce que j'ai créé</span>
+        <h2 id="projets-title" class="section-title section-title--center">Mes Projets</h2>
+        <p class="section-intro">
+          Voici une sélection de projets réalisés lors de mes formations, expériences personnelles et missions freelance.
+        </p>
+        <div class="projects-grid" id="projects-grid">
+          <!-- Projects injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section id="contact" class="section section--dark" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <span class="section-eyebrow section-eyebrow--light">Travaillons ensemble</span>
+          <h2 id="contact-title" class="section-title section-title--light">Vous avez un projet en tête ?</h2>
+          <p class="contact-desc">
+            N'hésitez pas à me contacter pour discuter de votre projet, d'une opportunité ou simplement pour échanger.
+          </p>
+          <ul class="contact-details" aria-label="Coordonnées">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+              <a href="mailto:alexandre.martin@email.com">alexandre.martin@email.com</a>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">linkedin.com/in/alexandre-martin</a>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.21 3.44 9.63 8.21 11.2.6.11.82-.25.82-.56 0-.28-.01-1.02-.02-2-3.34.71-4.04-1.59-4.04-1.59-.55-1.37-1.34-1.74-1.34-1.74-1.09-.73.08-.72.08-.72 1.21.08 1.84 1.22 1.84 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.58-2.67-.3-5.47-1.3-5.47-5.78 0-1.28.47-2.32 1.24-3.14-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.2a11.6 11.6 0 0 1 6 0c2.29-1.52 3.3-1.2 3.3-1.2.66 1.66.24 2.88.12 3.18.77.82 1.24 1.86 1.24 3.14 0 4.49-2.81 5.48-5.49 5.77.43.36.81 1.08.81 2.18 0 1.58-.01 2.85-.01 3.24 0 .31.21.68.83.56A12.01 12.01 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z"/></svg>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com/alexandre-martin</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-form-wrap">
+          <div id="form-feedback" class="form-feedback form-feedback--success" role="alert" aria-live="polite" hidden>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.</span>
+          </div>
+
+          <form id="contact-form" class="contact-form" novalidate aria-label="Formulaire de contact">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="form-label">Nom complet <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Jean Dupont" autocomplete="name" required aria-required="true" />
+                <span id="name-error" class="form-error" role="alert" hidden></span>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Adresse e-mail <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="jean.dupont@email.com" autocomplete="email" required aria-required="true" />
+                <span id="email-error" class="form-error" role="alert" hidden></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Sujet <span class="required" aria-hidden="true">*</span></label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="Projet freelance, collaboration..." required aria-required="true" />
+              <span id="subject-error" class="form-error" role="alert" hidden></span>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message <span class="required" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Décrivez votre projet ou votre demande..." rows="5" required aria-required="true"></textarea>
+              <span id="message-error" class="form-error" role="alert" hidden></span>
+            </div>
+            <p class="form-required-note"><span class="required">*</span> Champs obligatoires</p>
+            <button type="submit" class="btn btn--primary btn--full">
+              Envoyer le message
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; <span id="year"></span> Mame Gnilane FAYE — Tous droits réservés.</p>
+      <nav aria-label="Navigation secondaire">
+        <ul class="footer-nav" role="list">
+          <li><a href="#hero" class="footer-link">Accueil</a></li>
+          <li><a href="#apropos" class="footer-link">À propos</a></li>
+          <li><a href="#competences" class="footer-link">Compétences</a></li>
+          <li><a href="#projets" class="footer-link">Projets</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
